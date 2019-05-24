@@ -1,29 +1,24 @@
 # Basic
-title: 潘柏信
-subtitle: 个人站
-description: 欢迎来到我的个人站~
+title: 史明亚
+subtitle: 个人博客
+description: 三尺微命，一介书生。
 # 头像里面的标题
-avatarTitle: leopardpan
+avatarTitle: 一介书生
 # 头像里面的描述
-avatarDesc: iOS / 机器学习
-url: "http://baixin.io"
+avatarDesc: 分布式存储
+url: "https://shimingyah.github.io/"
 
 # Comment
 comment:
-    disqus: leopard
+    disqus: 一介书生
     # gitment: xxx // 需要修改 comments.html中的client_id和client_secret
     # uyan: 2143225  # 有言id,登录有言官网申请
 
 # Social
 social:
-    weibo: 5366874726 
-    github: leopardpan
+    github: shimingyah
     # zhihu: panpanleopard
-    # juejin: xxx
-    jianshu: 2ada30d8d0f7
-    # twitter: 
-    mail: leopardpan@icloud.com
-
+    mail: shimingyah@gmail.com
 
 # 百度统计 
 # 使用博客模板请去掉或者更换 id 
