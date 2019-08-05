@@ -12,6 +12,6 @@ tag: BadgerDB
 
 本系列文章便会先进行源码分析，然后在对象存储场景中指出BadgerBD有哪些不足和需要改进的点，让其更适用于做对象存储的单机KV。
 
-`GO语言到底适不适合做底层存储？`网上也有不少声音说因为GO语言的GC以及CGO问题不适合做底层存储引擎。比如TiDB的存储层TiKV就抛弃GO语言使用Rust、CockroachDB的单机引擎也是基于RocksDB、Purge-GO的[Go-LevelDB](https://github.com/syndtr/goleveldb)真正生产环境使用的也寥寥无几。然而也有吃螃蟹的，比如基于Facebook的[Haystack](https://www.usenix.org/legacy/event/osdi10/tech/full_papers/Beaver.pdf)论文实现的[SeaweedFS](https://github.com/chrislusf/seaweedfs)、网易自研的对象存储等也都在生产环境跑了几年。同时由同样有GC的JAVA语言实现的HDFS，被各大公司应用在生产环境，除了离线数据存储的应用场景，也有基于其做对象存储准在线场景的。GC语言的STW(Stop-The-World)怕是影响其做实时在线数据存储的最大因素了，但是随着GO语言GC机制的不断完善，除了数据库、块存储、内存Cache等对实时性、低延迟要求比较严格的场景外，我想大多数的存储场景使用GO就足够了吧。
+`GO语言到底适不适合做底层存储？`网上也有不少声音说因为GO语言的GC以及CGO问题不适合做底层存储引擎。比如TiDB的存储层TiKV就抛弃GO语言使用Rust、CockroachDB的单机引擎也是基于RocksDB、Purge-GO的[Go-LevelDB](https://github.com/syndtr/goleveldb)真正生产环境使用的也寥寥无几。然而也有吃螃蟹的，比如基于Facebook的[Haystack](https://www.usenix.org/legacy/event/osdi10/tech/full_papers/Beaver.pdf)论文实现的[SeaweedFS](https://github.com/chrislusf/seaweedfs)、网易自研的对象存储等也都在生产环境跑了几年。同时由同样有GC的JAVA语言实现的HDFS，被各大公司应用在生产环境，除了离线数据存储的应用场景，也有基于其做对象存储准在线场景的。GC语言的STW(Stop-The-World)怕是影响其做实时在线数据存储的最大因素了，但是随着GO语言GC机制的不断完善，除了数据库、块存储、NAS、内存Cache等对实时性、低延迟要求比较严格的场景外，我想大多数的存储场景使用GO就足够了吧。
 
 转载请注明：[史明亚的博客](https://shimingyah.github.io) » [BadgerDB源码分析之kv杂谈](https://shimingyah.github.io/2019/08/BadgerDB%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90%E4%B9%8Bkv%E6%9D%82%E8%B0%88/)
