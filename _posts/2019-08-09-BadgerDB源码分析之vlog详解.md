@@ -179,4 +179,4 @@ if vp.Fid == f.fid && vp.Offset == e.offset {
 }
 ```
 
-转载请注明：[史明亚的博客](https://shimingyah.github.io) » [文章标题](文章链接)
+转载请注明：[史明亚的博客](https://shimingyah.github.io) » [BadgerDB源码分析之vlog详解](https://shimingyah.github.io/2019/08/BadgerDB%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90%E4%B9%8Bvlog%E8%AF%A6%E8%A7%A3/)
