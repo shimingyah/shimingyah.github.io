@@ -84,6 +84,8 @@ double get_fragmentation(uint64_t alloc_unit)
 5. Allocator在初始化时L0、L1、L2三级`BitMap`就占用了固定的内存大小。
 6. Allocator可以支持并发的分配空闲，锁定L2的children(bit)即可，暂未实现。
 
+总体来说新版本BitMap分配器的优势在于使用连续的内存空间从而尽可能更多的命中CPU Cache以提高分配器性能。
+
 ### <a name="chapter4"></a>类定义
 
 AllocatorLevel是基类，AllocatorLevel01、AllocatorLevel02都继承了此类。
