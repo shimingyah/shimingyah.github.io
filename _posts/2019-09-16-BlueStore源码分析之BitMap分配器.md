@@ -146,4 +146,4 @@ void _free_l2(const interval_set<uint64_t>& rr)
 * [BlueStore New Bitmap Allocator](https://docs.google.com/presentation/d/1_1Otkgv76fbCU2Zogjz748sEAG-1Nfiidbb6mgTON-A/edit#slide=id.p)
 * [Ceph Bulestore磁盘空间分配初探](https://cloud.tencent.com/developer/article/1492262)
 
-转载请注明：[史明亚的博客](https://shimingyah.github.io) » [文章标题](文章链接)
+转载请注明：[史明亚的博客](https://shimingyah.github.io) » [BlueStore源码分析之BitMap分配器](https://shimingyah.github.io/2019/09/BlueStore%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90%E4%B9%8BBitMap%E5%88%86%E9%85%8D%E5%99%A8/)
