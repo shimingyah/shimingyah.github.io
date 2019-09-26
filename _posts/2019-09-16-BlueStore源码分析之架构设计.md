@@ -98,4 +98,4 @@ BlueStore抛弃了文件系统，直接管理裸设备，那么便用不了文�
 * [Ceph设计原理与实现](https://book.douban.com/subject/27178824/)
 * [sage:bluestore-a-new-storage-backend-for-ceph](https://www.slideshare.net/sageweil1/bluestore-a-new-storage-backend-for-ceph-one-year-in)
 
-转载请注明：[史明亚的博客](https://shimingyah.github.io) » [文章标题](文章链接)
+转载请注明：[史明亚的博客](https://shimingyah.github.io) » [BlueStore源码分析之架构设计](https://shimingyah.github.io/2019/09/BlueStore%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90%E4%B9%8B%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/)
