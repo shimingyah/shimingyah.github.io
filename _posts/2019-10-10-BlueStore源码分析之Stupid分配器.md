@@ -183,6 +183,28 @@ void StupidAllocator::_insert_free(uint64_t off, uint64_t len)
 
 ### <a name="chapter5"></a>空间分配
 
+空间分配的函数定义如下：
+
+```
+allocate(uint64_t want_size, uint64_t alloc_unit, 
+		uint64_t max_alloc_size, int64_t hint,PExtentVector* extents);
+		
+allocate_int(uint64_t want_size, uint64_t alloc_unit, int64_t hint,
+                         uint64_t* offset, uint32_t* length)
+                     
+```
+
+**其中`hint`是一个很重要的参数，表示分配的起始地址要尽量大于hint的值。**
+
+**核心流程为4个2层for循环**大致为：优先从hint地址依次向高级区间树开始分配长度大于等于`want_size`的连续空间，如果没有，则优先从hint地址依次向低级区间树开始分配长度大于等于`alloc_unit`的连续空间(长度会大于alloc_unit)。
+
+简单的空间分配图如下：
+
+![](http://img-ys011.didistatic.com/static/anything/stupid_simple_allocator.png)
+
+详细的空间分配流程图如下：
+![](http://img-ys011.didistatic.com/static/anything/stupid_allocator.png)
+
 ### <a name="chapter6"></a>空间回收
 
 空间释放的函数定义如下：
@@ -219,4 +241,4 @@ Bitmap分配器在BlueStore初始化时就初始化好了3层，而且大小是�
 * [Ceph BlueStore Allocator](http://blog.wjin.org/posts/ceph-bluestore-allocator.html)
 * [eBay PB 级日志系统的存储方案实践](https://www.infoq.cn/article/SVrBl84fbiGbgzfVzjYO)
 
-转载请注明：[史明亚的博客](https://shimingyah.github.io) » [文章标题](文章链接)
+转载请注明：[史明亚的博客](https://shimingyah.github.io) » [BlueStore源码分析之Stupid分配器](https://shimingyah.github.io/2019/10/BlueStore%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90%E4%B9%8BStupid%E5%88%86%E9%85%8D%E5%99%A8/)
