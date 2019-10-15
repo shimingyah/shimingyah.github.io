@@ -12,7 +12,7 @@ BlueStore直接管理裸设备，需要自行管理空间的分配和释放。`S
 
 一个block的状态可以为**占用**和**空闲**两种状态，持久化时只需要记录一种状态即可，便可以推导出另一种状态，BlueStore记录的是空闲block。主要有两个原因：一是回收空间的时候，方便空闲空间的合并；二是已分配的空间在Object中已有记录。
 
-FreelistManager最开始有`extent`和`bitmap`两种实现，现在默认为bitmap实现，extent的实现已经废弃。空闲空间持久化到磁盘也是通过RocksDB的Batch写入的。FreelistManager将block按一定数量组成段，每个段对应一个k/v键值对，key为第一个block在磁盘物理地址空间的offset，value为段内每个block的状态，即由0/1组成的位图，0为空闲，1为使用，这样可以通过与1进行异或运算，将分配和回收空间两种操作统一起来。
+FreelistManager最开始有`extent`和`bitmap`两种实现，现在默认为bitmap实现，extent的实现已经废弃。空闲空间持久化到磁盘也是通过RocksDB的Batch写入的。FreelistManager将block按一定数量组成段，每个段对应一个k/v键值对，key为第一个block在磁盘物理地址空间的offset，value为段内每个block的状态，即由0/1组成的位图，1为空闲，0为使用，这样可以通过与1进行异或运算，将分配和回收空间两种操作统一起来。
 
 ### 目录
 
@@ -294,4 +294,4 @@ void BitmapFreelistManager::release(uint64_t offset, uint64_t length, KeyValueDB
 
 * [Ceph BlueStore FreelistManager](http://blog.wjin.org/posts/ceph-bluestore-freelistmanager.html)
 
-转载请注明：[史明亚的博客](https://shimingyah.github.io) » [文章标题](文章链接)
+转载请注明：[史明亚的博客](https://shimingyah.github.io) » [BlueStore源码分析之FreelistManager](https://shimingyah.github.io/2019/09/BlueStore%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90%E4%B9%8BFreelistManager/)
