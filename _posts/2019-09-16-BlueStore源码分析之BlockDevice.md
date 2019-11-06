@@ -412,4 +412,4 @@ int KernelDevice::queue_discard(interval_set<uint64_t> &to_release) {
 * [浅谈分布式存储之SSD基本原理](https://shimingyah.github.io/2019/07/%E6%B5%85%E8%B0%88%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8%E4%B9%8BSSD%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/)
 * [浅谈分布式存储之sync详解](https://shimingyah.github.io/2019/10/%E6%B5%85%E8%B0%88%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8%E4%B9%8Bsync%E8%AF%A6%E8%A7%A3/)
 
-转载请注明：[史明亚的博客](https://shimingyah.github.io) » [BlueStore源码分析之BlockDevice](文章链接)
+转载请注明：[史明亚的博客](https://shimingyah.github.io) » [BlueStore源码分析之BlockDevice](https://shimingyah.github.io/2019/09/BlueStore%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90%E4%B9%8BBlockDevice/)
