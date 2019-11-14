@@ -210,4 +210,4 @@ void *BlueStore::MempoolThread::entry() {
 
 * [Ceph BlueStore Cache](http://blog.wjin.org/posts/ceph-bluestore-cache.html)
 
-转载请注明：[史明亚的博客](https://shimingyah.github.io) » [文章标题](文章链接)
+转载请注明：[史明亚的博客](https://shimingyah.github.io) » [BlueStore源码分析之Cache](https://shimingyah.github.io/2019/11/BlueStore%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90%E4%B9%8BCache/)
