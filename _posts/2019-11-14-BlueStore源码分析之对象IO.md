@@ -301,4 +301,4 @@ if (txc->deferred_txn) {
 * [Linux\_File\_Hole\_And\_Sparse\_Files](https://lrita.github.io/images/posts/filesystem/Linux_File_Hole_And_Sparse_Files.pdf)
 * [ceph存储引擎bluestore解析](http://www.sysnote.org/2016/08/19/ceph-bluestore/)
 
-转载请注明：[史明亚的博客](https://shimingyah.github.io) » [文章标题](文章链接)
+转载请注明：[史明亚的博客](https://shimingyah.github.io) » [BlueStore源码分析之对象IO](https://shimingyah.github.io/2019/11/BlueStore%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90%E4%B9%8B%E5%AF%B9%E8%B1%A1IO/)
