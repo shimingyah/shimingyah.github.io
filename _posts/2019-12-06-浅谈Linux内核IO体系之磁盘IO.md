@@ -527,4 +527,4 @@ write()--->sys_write()--->vfs_write()--->通用块层--->IO调度层--->块设�
 * [Linux Kernel Exploration IO系统](http://ilinuxkernel.com/?cat=7)
 * [Linux kernel source code](https://github.com/torvalds/linux)
 
-转载请注明：[史明亚的博客](https://shimingyah.github.io) » [文章标题](文章链接)
+转载请注明：[史明亚的博客](https://shimingyah.github.io) » [浅谈Linux内核IO体系之磁盘IO](https://shimingyah.github.io/2019/12/%E6%B5%85%E8%B0%88Linux%E5%86%85%E6%A0%B8IO%E4%BD%93%E7%B3%BB%E4%B9%8B%E7%A3%81%E7%9B%98IO/)
