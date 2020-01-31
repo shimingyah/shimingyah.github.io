@@ -92,6 +92,5 @@ Bitmap的信息是全部缓存在内存中的，当有写请求时，
 ### 参考资源
 
 * [Write-Ahead-Log-File-Format](https://github.com/facebook/rocksdb/wiki/Write-Ahead-Log-File-Format)
-    
 
-转载请注明：[史明亚的博客](https://shimingyah.github.io) » [文章标题](文章链接)
+转载请注明：[史明亚的博客](https://shimingyah.github.io) » [BadgerDB源码分析之vlog优化](https://shimingyah.github.io/2019/08/BadgerDB%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90%E4%B9%8Bvlog%E4%BC%98%E5%8C%96)
